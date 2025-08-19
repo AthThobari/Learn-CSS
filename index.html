@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index3.css" />
+  </head>
+  <style>
+    *,
+    html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <a href="index2.html">ke halaman 2</a>
-    <h1 class="orange">ini h1</h1>
-    <p class="orange">Saya menggunakan class</p>
+    nav {
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
 
+    nav .logo img {
+      width: 50px;
+      border-radius: 90%;
 
-    <h2 id="blue">ini h2</h2>
-    <p id="blue">Saya menggunakan id</p><br/>
+    }
 
-    <div id="content3">
-        <p class="fs">Saya menggunakan font size</p>
-        <p class="fw">Saya menggunakan font weight</p>
-        <p class="fc">Saya menggunakan font dengan warna berbeda</p>
-        <p class="ff">Saya menggunakan font family</p>
-    </div><br/>
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 1rem;
+    }
 
-    <div class="box-container" id="content4">
-        <div class="box1">box1</div>
-        <div class="box2">box2</div>
-        <div class="box3">box3</div>
+    nav ul li a {
+      text-decoration: none;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #191919;
+      font-weight: 600;
+      padding: 8px 0;
+      transition: all;
+      transition-duration: 300ms;
+        border-bottom: 1px solid rgba(255, 68, 0, 0);
+
+    }
+
+    nav ul li a:hover {
+        color: orangered;
+        border-bottom: 1px solid orangered;
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="download.jpg" alt="" />
+      </div>
+      <ul>
+        <li><a href="index.html">Halaman 1</a></li>
+        <li><a href="index2.html">Halaman 2</a></li>
+        <li><a href="index3.html">Halaman 3</a></li>
+      </ul>
+    </nav>
+
+        <div class="flex-container">
+      <div class="content">A</div>
+      <div class="content">B</div>
+      <div class="content">C</div>
     </div>
 
-    <div class="display-container">
-        <div class="block">1</div>
-        <div class="inline">2</div>
-        <div class="inline-block">3</div>
-        <div class="hidden">4</div>
+    
+    <div class="grid-item" id="grid">
+      <div class="content2">1</div>
+      <div class="content2">2</div>
+      <div class="content2">3</div>
     </div>
 
 
-
-
-</body>
+  </body>
 </html>

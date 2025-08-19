@@ -6,7 +6,63 @@
     <title>Document</title>
     <link rel="stylesheet" href="index2.css">
   </head>
+  <style>
+    *,
+    html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    nav {
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+
+    nav .logo img {
+      width: 50px;
+      border-radius: 90%;
+
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #191919;
+      font-weight: 600;
+      padding: 8px 0;
+      transition: all;
+      transition-duration: 300ms;
+        border-bottom: 1px solid rgba(255, 68, 0, 0);
+
+    }
+
+    nav ul li a:hover {
+        color: orangered;
+        border-bottom: 1px solid orangered;
+    }
+  </style>
   <body>
+    <nav>
+      <div class="logo">
+        <img src="download.jpg" alt="" />
+      </div>
+      <ul>
+        <li><a href="index.html">Halaman 1</a></li>
+        <li><a href="index2.html">Halaman 2</a></li>
+        <li><a href="index3.html">Halaman 3</a></li>
+      </ul>
+    </nav>
 
       <div >hello world</div>
       <div class="sticky">sticky</div>
