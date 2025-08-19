@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+.position-container {
+    background-color: lightgray;
+}
+.relative {
+    position: relative;
+    background-color: lightblue;
+
+}
+.absolute {
+    position: absolute;
+    background-color: red;
+    top: 100px;
+
+}
+.fixed {
+    position: fixed;
+    top: 500px;
+    right: 20px;
+}
+.sticky {
+    position: sticky;
+    background-color: yellow;
+    top: 0;
+}
